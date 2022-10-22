@@ -1,6 +1,7 @@
 package ast;
 import java.io.PrintStream;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class UnaryMinusExpr extends Expr {
     public final Expr expr;
@@ -24,7 +25,7 @@ public class UnaryMinusExpr extends Expr {
         v = expr.valofint(scanner, intval);
         return -v;
     }
-    public Double valoffloat(Scanner scanner, HashMap<String, DOuble> floatval) {
+    public Double valoffloat(Scanner scanner, HashMap<String, Double> floatval) {
         Double v;
         v = expr.valoffloat(scanner, floatval);
         return -v;

@@ -1,6 +1,9 @@
 package ast;
 import java.io.PrintStream;
 import java.util.HashMap;
+import java.util.Scanner;
+import interpreter.Interpreter;
+
 
 public class ReadIntExpr extends Expr {
     public ReadIntExpr(Location loc) {
@@ -14,7 +17,7 @@ public class ReadIntExpr extends Expr {
         return 1;
     }
     public Long valofint(Scanner scanner, HashMap<String, Long> intval) {
-        Long v = 0;
+        Long v = 0L;
         try {
             v = scanner.nextLong();
         }

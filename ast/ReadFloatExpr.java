@@ -2,7 +2,7 @@ package ast;
 import java.io.PrintStream;
 import java.util.HashMap;
 import java.util.Scanner;
-import interpreter.Interpreter
+import interpreter.Interpreter;
 
 public class ReadFloatExpr extends Expr {
     public ReadFloatExpr(Location loc) {
